@@ -3,12 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
   body {
     @apply font-body text-midnight-navy bg-soft-ivory;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-display;
+  }
+  
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 

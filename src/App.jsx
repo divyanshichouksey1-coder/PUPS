@@ -15,7 +15,7 @@ function App() {
   const [showBooking, setShowBooking] = useState(false)
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full overflow-x-hidden">
       <Navbar onBookClick={() => setShowBooking(true)} />
       <HeroSection onBookClick={() => setShowBooking(true)} />
       <BoutiqueGrid />
